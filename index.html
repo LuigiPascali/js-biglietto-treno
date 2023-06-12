@@ -67,59 +67,86 @@
         </header>
 
         <!-- ! Main Start -->
+
         <main>
 
-            <main>
-
-                <div class="container">
+            <div class="container">
     
-                    <div class="row">
+                <div class="row">
     
-                        <div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 d-flex justify-content-center mt-4 mb-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4">
     
                             <div class="card text-center">
     
                                 <img src="./img/img_2.jpg" class="card-img-top img-fluid" alt="hans_img">
             
                                 <div class="card-body">
-                                    <h5 class="card-title">Ciao, sono Lyle Lanley, vuoi gustarti un esperienza a bordo della mia "sicurissima" monorotaia?!</h5>
-                                    <button id="calculate_button"> Calcola il prezzo del tuo biglietto </button>
+                                    <h5 class="card-title">
+                                        Ciao, sono Lyle Lanley, sei pronto a gustarti un esperienza a bordo della mia "sicurissima" monorotaia?!  
+                                    </h5>
+
+                                    <h5 class="card-title">
+                                        Dove vorresti andare? 
+                                    </h5>
+
+                                    <select class="form-control" id="city">
+                                        <option value="">Seleziona una città</option>
+                                        <option value="springfield">Springfield</option>
+                                        <option value="shelbyville">Shelbyville</option>
+                                        <option value="san_andreas">San Andreas</option>
+                                        <option value="sin_city">Sin City</option>
+                                        <option value="quahog">Quahog</option>
+                                        <option value="marte">Marte</option>
+                                      </select>
+                                    
                                 </div>
             
                             </div>
     
-                        </div>
-                          
                     </div>
-    
-                </div>
-    
-                <div class="container">
-    
-                    <div class="row">
-    
-                        <div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 d-flex justify-content-center mb-4">
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4">
     
                             <div class="card text-center">
     
+                                <img src="./img/img_3.jpg" class="card-img-top img-fluid" alt="hans_img">
+            
                                 <div class="card-body">
-    
-                                    <h5 class="card-title"> Il prezzo del tuo fantastico viaggio a bordo della Monorotaia Lanley è... </h5>
-                                    <hr class="card-divider">
-    
-                                    <p id="txt"></p>
-    
+                                    <h5 class="card-title">
+                                        Ora scrivi qui la tua età e il gioco è fatto!  
+                                    </h5>
+
+                                    <input type="number" class="form-control my_fc" id="age" min="0" max="130" required>
+                                    
                                 </div>
-    
+            
                             </div>
     
-                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4">
+    
+                            <div class="card text-center">
+    
+                                <img src="./img/img_4.jpg" class="card-img-top img-fluid" alt="hans_img">
+            
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Il prezzo del biglietto è...  
+                                    </h5>
+                                    <hr class="card-divider my_fc">
+    
+                                    <p id="txt"></p>
+                                    
+                                </div>
+            
+                            </div>
     
                     </div>
-    
+                          
                 </div>
-                
-            </main>
+    
+            </div>        
 
         </main>
 
