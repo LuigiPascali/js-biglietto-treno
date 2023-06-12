@@ -25,8 +25,10 @@ calculateButton.addEventListener("click", function() {
   let kmPrice = 0.21;
   let totalPrice = (km * kmPrice);
 
-  let discountedPrice;
-  if (age < 18) {
+
+  if (isNaN(age) || isNaN(km) || (age < 0 || age > 130) || (km < 0 || km > 200)) {
+    alert("Inserisci un valore numerico compreso tra 0 e 130 per l'età e tra 0 e 200 per i km");
+  } else if (age < 18) {
     discountedPrice = totalPrice - (totalPrice * 0.2);
   } else if (age > 65) {
     discountedPrice = totalPrice - (totalPrice * 0.4);
@@ -38,3 +40,4 @@ calculateButton.addEventListener("click", function() {
   output.innerHTML = discountedPrice.toFixed(2) + " €";
 });
 
+alert("Inserisci un valore numerico compreso tra 0 e 130 per l'età e tra 0 e 200 per i km");
