@@ -40,4 +40,3 @@ calculateButton.addEventListener("click", function() {
   output.innerHTML = discountedPrice.toFixed(2) + " €";
 });
 
-alert("Inserisci un valore numerico compreso tra 0 e 130 per l'età e tra 0 e 200 per i km");
