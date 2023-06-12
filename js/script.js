@@ -6,7 +6,7 @@
 // let totalPrice = (km * kmPrice);
 
 // let discountedPrice;
-//     if (age > 18) {
+//     if (age < 18) {
 //         discountedPrice = totalPrice - (totalPrice * 0.2);
 //     } else if (age > 65) {
 //         discountedPrice = totalPrice - (totalPrice * 0.4);
@@ -26,7 +26,7 @@ calculateButton.addEventListener("click", function() {
   let totalPrice = (km * kmPrice);
 
   let discountedPrice;
-  if (age > 18) {
+  if (age < 18) {
     discountedPrice = totalPrice - (totalPrice * 0.2);
   } else if (age > 65) {
     discountedPrice = totalPrice - (totalPrice * 0.4);
@@ -35,6 +35,6 @@ calculateButton.addEventListener("click", function() {
   }
 
   let output = document.getElementById('txt');
-  output.innerHTML = discountedPrice.toFixed(2) + "€";
+  output.innerHTML = discountedPrice.toFixed(2) + " €";
 });
 
